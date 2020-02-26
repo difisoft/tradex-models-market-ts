@@ -1,299 +1,203 @@
 import {
-  ClientResponse,
-} from "./ClientResponse";
+  EtfIndexDailyRequest,
+} from "./EtfIndexDailyRequest";
 import {
-  DeleteAdminScopeGroupRequest,
-} from "./DeleteAdminScopeGroupRequest";
+  EtfIndexDailyResponse,
+} from "./EtfIndexDailyResponse";
 import {
-  DeleteAdminScopeGroupResponse,
-} from "./DeleteAdminScopeGroupResponse";
+  EtfNavDailyRequest,
+} from "./EtfNavDailyRequest";
 import {
-  DeleteAdminScopeRequest,
-} from "./DeleteAdminScopeRequest";
+  EtfNavDailyResponse,
+} from "./EtfNavDailyResponse";
 import {
-  DeleteAdminScopeResponse,
-} from "./DeleteAdminScopeResponse";
+  FixSecurityListQueryRequest,
+} from "./FixSecurityListQueryRequest";
 import {
-  DeleteClientRequest,
-} from "./DeleteClientRequest";
+  FixSecurityListQueryResponse,
+} from "./FixSecurityListQueryResponse";
 import {
-  DeleteClientResponse,
-} from "./DeleteClientResponse";
+  ForeignerDailyRequest,
+} from "./ForeignerDailyRequest";
 import {
-  DeleteLocaleKeyRequest,
-} from "./DeleteLocaleKeyRequest";
+  ForeignerDailyResponse,
+} from "./ForeignerDailyResponse";
 import {
-  DeleteLocaleKeyResponse,
-} from "./DeleteLocaleKeyResponse";
+  IndexStockListRequest,
+} from "./IndexStockListRequest";
 import {
-  DeleteLoginMethodRequest,
-} from "./DeleteLoginMethodRequest";
+  IndexStockListResponse,
+} from "./IndexStockListResponse";
 import {
-  DeleteLoginMethodResponse,
-} from "./DeleteLoginMethodResponse";
+  MarketSessionStatusRequest,
+} from "./MarketSessionStatusRequest";
 import {
-  HolidayListRequest,
-} from "./HolidayListRequest";
+  MarketSessionStatusResponse,
+} from "./MarketSessionStatusResponse";
 import {
-  HolidayListResponse,
-} from "./HolidayListResponse";
+  PutthroughAdvertiseRequest,
+} from "./PutthroughAdvertiseRequest";
 import {
-  LocaleKey,
-} from "./LocaleKey";
+  PutthroughAdvertiseResponse,
+} from "./PutthroughAdvertiseResponse";
 import {
-  LoginMethodResponse,
-} from "./LoginMethodResponse";
+  PutthroughDealRequest,
+} from "./PutthroughDealRequest";
 import {
-  Menu,
-} from "./Menu";
+  PutthroughDealResponse,
+} from "./PutthroughDealResponse";
 import {
-  OpenApiDeleteRequest,
-} from "./OpenApiDeleteRequest";
+  StockRankingTradeRequest,
+} from "./StockRankingTradeRequest";
 import {
-  OpenApiDeleteResponse,
-} from "./OpenApiDeleteResponse";
+  StockRankingTradeResponse,
+} from "./StockRankingTradeResponse";
 import {
-  OpenApiListRequest,
-} from "./OpenApiListRequest";
+  StockRankingUpDownRequest,
+} from "./StockRankingUpDownRequest";
 import {
-  OpenApiListResponse,
-} from "./OpenApiListResponse";
+  StockRankingUpDownResponse,
+} from "./StockRankingUpDownResponse";
 import {
-  OpenApiUpdateRequest,
-} from "./OpenApiUpdateRequest";
+  SymbolInfoRequest,
+} from "./SymbolInfoRequest";
 import {
-  OpenApiUpdateResponse,
-} from "./OpenApiUpdateResponse";
+  SymbolInfoResponse,
+} from "./SymbolInfoResponse";
 import {
-  PostAdminScopeGroupRequest,
-} from "./PostAdminScopeGroupRequest";
+  SymbolLatestRequest,
+} from "./SymbolLatestRequest";
 import {
-  PostAdminScopeGroupResponse,
-} from "./PostAdminScopeGroupResponse";
+  SymbolLatestResponse,
+} from "./SymbolLatestResponse";
 import {
-  PostAdminScopeRequest,
-} from "./PostAdminScopeRequest";
+  SymbolPeriodRequest,
+} from "./SymbolPeriodRequest";
 import {
-  PostAdminScopeResponse,
-} from "./PostAdminScopeResponse";
+  SymbolPeriodResponse,
+} from "./SymbolPeriodResponse";
 import {
-  PostClientRequest,
-} from "./PostClientRequest";
+  SymbolQuoteMinuteRequest,
+} from "./SymbolQuoteMinuteRequest";
 import {
-  PostLocaleKeyRequest,
-} from "./PostLocaleKeyRequest";
+  SymbolQuoteMinuteResponse,
+} from "./SymbolQuoteMinuteResponse";
 import {
-  PostLocaleKeyRespone,
-} from "./PostLocaleKeyRespone";
+  SymbolQuoteRequest,
+} from "./SymbolQuoteRequest";
 import {
-  PostLoginMethodRequest,
-} from "./PostLoginMethodRequest";
+  SymbolQuoteResponse,
+} from "./SymbolQuoteResponse";
 import {
-  PostLoginMethodResponse,
-} from "./PostLoginMethodResponse";
+  SymbolQuoteTickRequest,
+} from "./SymbolQuoteTickRequest";
 import {
-  PostUploadLocaleRequest,
-} from "./PostUploadLocaleRequest";
+  SymbolQuoteTickResponse,
+} from "./SymbolQuoteTickResponse";
 import {
-  PostUploadLocaleResponse,
-} from "./PostUploadLocaleResponse";
+  SymbolStaticInfoRequest,
+} from "./SymbolStaticInfoRequest";
 import {
-  PutAdminScopeGroupRequest,
-} from "./PutAdminScopeGroupRequest";
+  SymbolStaticInfoResponse,
+} from "./SymbolStaticInfoResponse";
 import {
-  PutAdminScopeGroupResponse,
-} from "./PutAdminScopeGroupResponse";
+  TradingViewDeleteChartRequest,
+} from "./TradingViewDeleteChartRequest";
 import {
-  PutAdminScopeRequest,
-} from "./PutAdminScopeRequest";
+  TradingViewDeleteChartResponse,
+} from "./TradingViewDeleteChartResponse";
 import {
-  PutAdminScopeResponse,
-} from "./PutAdminScopeResponse";
+  TradingViewHistoryRequest,
+} from "./TradingViewHistoryRequest";
 import {
-  PutClientRequest,
-} from "./PutClientRequest";
+  TradingViewHistoryResponse,
+} from "./TradingViewHistoryResponse";
 import {
-  PutClientResponse,
-} from "./PutClientResponse";
+  TradingViewListChartRequest,
+} from "./TradingViewListChartRequest";
 import {
-  PutLocaleKeyTranslateRequest,
-} from "./PutLocaleKeyTranslateRequest";
+  TradingViewListChartResponse,
+} from "./TradingViewListChartResponse";
 import {
-  PutLocaleKeyTranslateResponse,
-} from "./PutLocaleKeyTranslateResponse";
+  TradingViewLoadChartRequest,
+} from "./TradingViewLoadChartRequest";
 import {
-  PutLoginMethodRequest,
-} from "./PutLoginMethodRequest";
+  TradingViewLoadChartResponse,
+} from "./TradingViewLoadChartResponse";
 import {
-  PutLoginMethodResponse,
-} from "./PutLoginMethodResponse";
+  TradingViewSaveChartRequest,
+} from "./TradingViewSaveChartRequest";
 import {
-  QueryAdminScopeGroupRequest,
-} from "./QueryAdminScopeGroupRequest";
+  TradingViewSaveChartResponse,
+} from "./TradingViewSaveChartResponse";
 import {
-  QueryAdminScopeGroupResponse,
-} from "./QueryAdminScopeGroupResponse";
+  TradingViewSymbolInfoRequest,
+} from "./TradingViewSymbolInfoRequest";
 import {
-  QueryAdminScopeRequest,
-} from "./QueryAdminScopeRequest";
+  TradingViewSymbolInfoResponse,
+} from "./TradingViewSymbolInfoResponse";
 import {
-  QueryAdminScopeResponse,
-} from "./QueryAdminScopeResponse";
+  TradingViewSymbolSearchRequest,
+} from "./TradingViewSymbolSearchRequest";
 import {
-  QueryClientByIdRequest,
-} from "./QueryClientByIdRequest";
+  TradingViewSymbolSearchResponse,
+} from "./TradingViewSymbolSearchResponse";
 import {
-  QueryClientByIdResponse,
-} from "./QueryClientByIdResponse";
+  TradingViewUpdateChartRequest,
+} from "./TradingViewUpdateChartRequest";
 import {
-  QueryClientRequest,
-} from "./QueryClientRequest";
-import {
-  QueryClientResponse,
-} from "./QueryClientResponse";
-import {
-  QueryInterestInfoResponse,
-} from "./QueryInterestInfoResponse";
-import {
-  QueryLocaleKeyByNameSpaceRequest,
-} from "./QueryLocaleKeyByNameSpaceRequest";
-import {
-  QueryLocaleKeyByNameSpaceResponse,
-} from "./QueryLocaleKeyByNameSpaceResponse";
-import {
-  QueryLocaleRequest,
-} from "./QueryLocaleRequest";
-import {
-  QueryLocaleResponse,
-} from "./QueryLocaleResponse";
-import {
-  QueryLoginMethodByIdRequest,
-} from "./QueryLoginMethodByIdRequest";
-import {
-  QueryLoginMethodByIdResponse,
-} from "./QueryLoginMethodByIdResponse";
-import {
-  QueryLoginMethodRequest,
-} from "./QueryLoginMethodRequest";
-import {
-  QueryLoginMethodResponse,
-} from "./QueryLoginMethodResponse";
-import {
-  QueryMenuRequest,
-} from "./QueryMenuRequest";
-import {
-  QueryMenuResponse,
-} from "./QueryMenuResponse";
-import {
-  QuerySignedDataToUploadRequest,
-} from "./QuerySignedDataToUploadRequest";
-import {
-  QuerySignedDataToUploadResponse,
-} from "./QuerySignedDataToUploadResponse";
-import {
-  QuerySystemClientRequest,
-} from "./QuerySystemClientRequest";
-import {
-  QuerySystemClientResponse,
-} from "./QuerySystemClientResponse";
-import {
-  QuerySystemLoginMethodRequest,
-} from "./QuerySystemLoginMethodRequest";
-import {
-  QuerySystemLoginMethodResponse,
-} from "./QuerySystemLoginMethodResponse";
-import {
-  QuerySystemScopeGroupRequest,
-} from "./QuerySystemScopeGroupRequest";
-import {
-  QuerySystemScopeGroupResponse,
-} from "./QuerySystemScopeGroupResponse";
-import {
-  QuerySystemScopeRequest,
-} from "./QuerySystemScopeRequest";
-import {
-  QuerySystemScopeResponse,
-} from "./QuerySystemScopeResponse";
-import {
-  ScopeGroupResponse,
-} from "./ScopeGroupResponse";
-import {
-  ScopeResponse,
-} from "./ScopeResponse";
+  TradingViewUpdateChartResponse,
+} from "./TradingViewUpdateChartResponse";
 
 export {
-  ClientResponse,
-  DeleteAdminScopeGroupRequest,
-  DeleteAdminScopeGroupResponse,
-  DeleteAdminScopeRequest,
-  DeleteAdminScopeResponse,
-  DeleteClientRequest,
-  DeleteClientResponse,
-  DeleteLocaleKeyRequest,
-  DeleteLocaleKeyResponse,
-  DeleteLoginMethodRequest,
-  DeleteLoginMethodResponse,
-  HolidayListRequest,
-  HolidayListResponse,
-  LocaleKey,
-  LoginMethodResponse,
-  Menu,
-  OpenApiDeleteRequest,
-  OpenApiDeleteResponse,
-  OpenApiListRequest,
-  OpenApiListResponse,
-  OpenApiUpdateRequest,
-  OpenApiUpdateResponse,
-  PostAdminScopeGroupRequest,
-  PostAdminScopeGroupResponse,
-  PostAdminScopeRequest,
-  PostAdminScopeResponse,
-  PostClientRequest,
-  PostLocaleKeyRequest,
-  PostLocaleKeyRespone,
-  PostLoginMethodRequest,
-  PostLoginMethodResponse,
-  PostUploadLocaleRequest,
-  PostUploadLocaleResponse,
-  PutAdminScopeGroupRequest,
-  PutAdminScopeGroupResponse,
-  PutAdminScopeRequest,
-  PutAdminScopeResponse,
-  PutClientRequest,
-  PutClientResponse,
-  PutLocaleKeyTranslateRequest,
-  PutLocaleKeyTranslateResponse,
-  PutLoginMethodRequest,
-  PutLoginMethodResponse,
-  QueryAdminScopeGroupRequest,
-  QueryAdminScopeGroupResponse,
-  QueryAdminScopeRequest,
-  QueryAdminScopeResponse,
-  QueryClientByIdRequest,
-  QueryClientByIdResponse,
-  QueryClientRequest,
-  QueryClientResponse,
-  QueryInterestInfoResponse,
-  QueryLocaleKeyByNameSpaceRequest,
-  QueryLocaleKeyByNameSpaceResponse,
-  QueryLocaleRequest,
-  QueryLocaleResponse,
-  QueryLoginMethodByIdRequest,
-  QueryLoginMethodByIdResponse,
-  QueryLoginMethodRequest,
-  QueryLoginMethodResponse,
-  QueryMenuRequest,
-  QueryMenuResponse,
-  QuerySignedDataToUploadRequest,
-  QuerySignedDataToUploadResponse,
-  QuerySystemClientRequest,
-  QuerySystemClientResponse,
-  QuerySystemLoginMethodRequest,
-  QuerySystemLoginMethodResponse,
-  QuerySystemScopeGroupRequest,
-  QuerySystemScopeGroupResponse,
-  QuerySystemScopeRequest,
-  QuerySystemScopeResponse,
-  ScopeGroupResponse,
-  ScopeResponse,
+  EtfIndexDailyRequest,
+  EtfIndexDailyResponse,
+  EtfNavDailyRequest,
+  EtfNavDailyResponse,
+  FixSecurityListQueryRequest,
+  FixSecurityListQueryResponse,
+  ForeignerDailyRequest,
+  ForeignerDailyResponse,
+  IndexStockListRequest,
+  IndexStockListResponse,
+  MarketSessionStatusRequest,
+  MarketSessionStatusResponse,
+  PutthroughAdvertiseRequest,
+  PutthroughAdvertiseResponse,
+  PutthroughDealRequest,
+  PutthroughDealResponse,
+  StockRankingTradeRequest,
+  StockRankingTradeResponse,
+  StockRankingUpDownRequest,
+  StockRankingUpDownResponse,
+  SymbolInfoRequest,
+  SymbolInfoResponse,
+  SymbolLatestRequest,
+  SymbolLatestResponse,
+  SymbolPeriodRequest,
+  SymbolPeriodResponse,
+  SymbolQuoteMinuteRequest,
+  SymbolQuoteMinuteResponse,
+  SymbolQuoteRequest,
+  SymbolQuoteResponse,
+  SymbolQuoteTickRequest,
+  SymbolQuoteTickResponse,
+  SymbolStaticInfoRequest,
+  SymbolStaticInfoResponse,
+  TradingViewDeleteChartRequest,
+  TradingViewDeleteChartResponse,
+  TradingViewHistoryRequest,
+  TradingViewHistoryResponse,
+  TradingViewListChartRequest,
+  TradingViewListChartResponse,
+  TradingViewLoadChartRequest,
+  TradingViewLoadChartResponse,
+  TradingViewSaveChartRequest,
+  TradingViewSaveChartResponse,
+  TradingViewSymbolInfoRequest,
+  TradingViewSymbolInfoResponse,
+  TradingViewSymbolSearchRequest,
+  TradingViewSymbolSearchResponse,
+  TradingViewUpdateChartRequest,
+  TradingViewUpdateChartResponse,
 };
