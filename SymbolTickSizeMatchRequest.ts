@@ -8,12 +8,12 @@
 import {BaseRequest} from "tradex-models-common";
 
 /**
- * stockOrderMatchingRequest schema
+ * symbolTickSizeMatchRequest schema
  */
-export type StockOrderMatchingRequest = BaseRequest & {
+export type SymbolTickSizeMatchRequest = BaseRequest & {
   /**
-   * indexCode
+   * symbol data
    */
-  indexCode: string;
+  symbol: string;
   [k: string]: any;
 };
